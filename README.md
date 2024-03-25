@@ -19,4 +19,13 @@ $ npm install react-native-screens react-native-safe-area-context
     $ npm run android
 ```
 
-##
+## native-stack, stack
+```bash
+This fixes the issue with having a navigation stack:
+$ npm install @react-navigation/native-stack
+```
+
+## Installing native-navigation
+```bash
+$ npm install @react-navigation/native
+```

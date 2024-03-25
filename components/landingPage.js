@@ -1,16 +1,23 @@
-import { ImageBackground, StyleSheet, Text, View, } from 'react-native';
+import { Button, ImageBackground, ScrollView, StyleSheet, Text, View, } from 'react-native';
 import { useState } from 'react';
 import { SearchBar, Card } from '@rneui/themed';
+import { useNavigation } from '@react-navigation/native';
 
-const LandingPage = ({ navigation }) => {
+const LandingPage = () => {
     const [search, setSearch] = useState("");
     
     const updateSearch = (search) => {
         setSearch(search);
     }
 
+    const navigation = useNavigation(); 
+
+    const goToHomePage = () => {
+        navigation.navigate('HomePage');
+    }
+
     return(
-        <View style={landingPageStyling.container}>
+        <ScrollView style={landingPageStyling.container}>
             <ImageBackground source={{ uri: '' }} style={landingPageStyling.topBackground}> 
                 <Text style={ landingPageStyling.title }>
                     Welcome to CookBook Corner
@@ -59,9 +66,12 @@ const LandingPage = ({ navigation }) => {
                         <Card.Title>Trending 4</Card.Title>
                     </Card>
             </View>
+            <Button
+            onPress={goToHomePage}
+            title="Home Page"
+            />
             </ImageBackground>
-
-        </View>
+        </ScrollView>
     )
 }
 

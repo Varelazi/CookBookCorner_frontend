@@ -11,7 +11,7 @@ const LandingPage = ({ navigation }) => {
 
     return(
         <View style={landingPageStyling.container}>
-            <ImageBackground source={{ uri: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7fbb8ab6-ef65-4905-9069-443fada8372b/dfxcr46-2361c558-2d46-4482-8df3-50bda464a496.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdmYmI4YWI2LWVmNjUtNDkwNS05MDY5LTQ0M2ZhZGE4MzcyYlwvZGZ4Y3I0Ni0yMzYxYzU1OC0yZDQ2LTQ0ODItOGRmMy01MGJkYTQ2NGE0OTYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xAIYM6USNdo50KwPkXzeQ-_anED7Nn4OVPNd0-B6_vQ' }} style={landingPageStyling.topBackground}> 
+            <ImageBackground source={{ uri: '' }} style={landingPageStyling.topBackground}> 
                 <Text style={ landingPageStyling.title }>
                     Welcome to CookBook Corner
                 </Text>

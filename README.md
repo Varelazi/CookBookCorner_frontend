@@ -11,3 +11,12 @@ $ npm install @react-navigation/native
 $ npm install react-native-screens react-native-safe-area-context
 
 ```
+
+## Running app on mobile/Android
+```bash 
+- Run the phone one the Android Studio app
+- Then run the command:
+    $ npm run android
+```
+
+##

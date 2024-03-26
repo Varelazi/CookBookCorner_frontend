@@ -20,3 +20,4 @@ $ npm install react-native-screens react-native-safe-area-context
 ```
 
 ##
+doign thsi to test 

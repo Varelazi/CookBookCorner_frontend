@@ -1,4 +1,4 @@
-import { ImageBackground, StyleSheet, Text, ScrollView, View, TextInput } from 'react-native';
+import { ImageBackground, StyleSheet, Text, ScrollView, View, TextInput, Pressable} from 'react-native';
 import { useState } from 'react';
 import { SearchBar, Card } from '@rneui/themed';
 // import { validateEmail } from '../utils';
@@ -67,6 +67,10 @@ const LandingPage = ({ navigation }) => {
                         placeholder='Confirm Password' 
                         secureTextEntry={true}
                         />
+                        {/* <Pressable>  */}
+                             {/*make it navigate the signed in home page when successfully created account using onPress={() => navigation.navigate('home')} */}
+                           <Text style={landingPageStyling.button}>Create Account</Text>
+                        {/* </Pressable> */}
                         <Text style={[landingPageStyling.guest]} onPress={toggleSignUp} // have it navigate to the guest home screen when that gets set up
                         > Join as Guest</Text>
                     </View>
@@ -89,6 +93,10 @@ const LandingPage = ({ navigation }) => {
                         placeholder='Password' 
                         secureTextEntry={true}
                         />
+                        {/* <Pressable >  */}
+                             {/*make it navigate the signed in home page using onPress={() => navigation.navigate('home')} */}
+                           <Text style={landingPageStyling.button}>Sign In</Text>
+                        {/* </Pressable> */}
                         <Text style={[landingPageStyling.guest]} onPress={toggleSignUp} // have it navigate to the guest home screen when that gets set up
                         > Join as Guest</Text>
                     </View>
@@ -181,6 +189,17 @@ const landingPageStyling = StyleSheet.create({
         fontSize: 16,
         overflow: 'hidden',
         alignSelf: 'center',
+    },
+    button: {
+        fontSize: 20,
+        textAlign: 'center',
+        borderRadius: 10,
+        borderColor: 'black', 
+        borderWidth: 1.5,
+        backgroundColor:'#55c2da',
+        margin: 10,
+        padding: 8,
+        overflow: 'hidden', //makes the background color not overflow out the border
     },
     guest:{
         textAlign: 'center'
